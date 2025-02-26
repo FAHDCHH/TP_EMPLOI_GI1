@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+    
+    .days{
+        width: 3%;
+        background-color: gainsboro;
+        font-family:#e4855b;
+
+    }
+    .tp{
+        background-color: white;
+        color :red;
+    }
+    .cours{
+        background-color: #effed6;
+        
+        color:#e4855b;
+    
+    }
+    .uni{
+        width: 10% ;
+        height: 10%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 5%;
+        
+        border: 7 px  dotted  rgb(13, 13, 211);
+        border-top: none;
+        border-left: none; 
+        border-bottom: none;
+      
+
+    }
+    .ensa{
+        width: 10% ;
+        height: 10%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 5%;
+        text-align: center;
+        border: 5px  dotted  blue;
+        border-top: none;
+        border-right: none; 
+        border-bottom: none;
+       
+    }
+    .table{
+        margin-top: 2%;
+        border-color: blue;
+    }
+    h1{
+        text-align:center;
+        margin-top:5% ;
+        color:#0070c0;
+        font-size : 15px;
+        
+                
+       
+    }
+   
+    h2{
+    text-align: center;
+    display: inline;
+    margin-left: 35%;
+    color: red;
+    border: 5px  dotted  blue; 
+    border-top: none;
+    padding: 10px 100px;
+    
+    }
+    .cours,.tp{
+        width: 10%;
+    }
+    .no-prof {
+        content: "       ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: rgb(191, 215, 8);
+    }
+    /*
+    .box {
+        border: 1px dotted rgb(154, 30, 30);   Dotted border 
+        border-top: none;            Remove the top border 
+        padding: 10px;
+        display: inline-block;
+    }
+    */
+    
+</style>
+<body>
+   <h1 class="box">Université Sultan Moulay Slimane <br>
+    Ecole Nationale des Sciences Appliquées de Khouribga <br>
+    Année Universitaire 2024 – 2025
+    </h1>
+    
+    ><h2>EMPLOI DU TEMPS GI1 (semestre 2)</h2>
+    
+    
+   <div>
+            <img class="ensa" src="download.jpg" alt="ensakh logo">
+
+        
+            <p  style=" color: rgb(35, 218, 35) ;top: 20%; position: absolute; left: 0;">
+            Filière&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Génie Informatique
+            <br>Annee
+            <p style="color: red;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</p>
+  </p>
+   </div>
+   <img class="uni" src="uni.jpg" alt="université Sultan Moulay Slimane">
+
+   <table class="table" border="1"  style=" width: 100%;">
+        <tr >
+            <th></th>
+            <th class="hours" colspan="3">8H15 to 10H00</th>
+            <th class="hours" colspan="3">10H00 to 12H00</th>
+            <th   style= "width: 0.5%; "></th>
+            <th class="hours" colspan="3">14H00 to 15H45</th>
+            <th class="hours" colspan="3">16H00 to 17H45</th>
+        </tr>
+        <tr> 
+            <th  class="days">Lundi</th>
+            <td class="cours" colspan="2">Administration de l'IFRA Info</td>
+            <td class="cours" style="width: 5%;"> 
+                C2 <br>
+                Pr.tissir
+            </td>
+            <td class="cours" colspan="2">the one before</td>
+            <td class="cours" style="width: 5%;"> 
+                C2 <br>
+                Pr.tissir
+            </td>
+            <th   rowspan = 5 style= "width: 0.5%; "></th>
+            <td class="cours" colspan="2">art digital</td>
+            <td class="cours" style="width: 5%;"> 
+                C2 <br>
+                Pr.Ghazdali 
+            </td>
+            <td class="cours" colspan="2">art digital</td>
+            <td class="cours"  style="width: 5%;"> 
+                C2 <br>
+                Pr.Ghazdali
+            </td>
+        </tr>
+        <tr>
+            <th class="days" >Mardi</th>
+            <td class="cours" colspan="2">Theorie des graphs et opti comobi</td>
+            <td class="cours" style="width: 5%;"> 
+                C2 <br>
+                <p class="no_prof"></p>
+            <td class="cours" colspan="2">Theorie des graphs et opti comobi</td>
+            <td class="cours" style="width: 5%;"> 
+                C2 <br>
+                <p class="no_prof"></p>
+            <td class="cours" colspan="2">Français</td>
+            <td class="cours" style="width: 5%;"> 
+                C2 <br>
+                <p class="no_prof"></p>
+                <td class="tp" colspan="2">TP</td>
+                <td class="tp" style="width: 5%;"> </td>
+            
+        </tr>
+        <tr>
+            <th class="days" >Mercredi</th>
+            <td class="cours" colspan="2">Java</td>
+            <td class="cours" style="width: 5%;"> 
+                C2 <br>
+                Pr.Baghdadi
+            <td  class="cours" colspan="2">Java</td>
+            <td class="cours" style="width: 5%;"> 
+                C2 <br>
+                Pr.Baghdadi
+                <td class="tp" colspan="2">TP</td>
+                <td class="tp" style="width: 5%;"> </td>
+           
+            <td class="tp" colspan="2">TP</td>
+            <td class="tp" style="width: 5%;"> </td>
+            
+        </tr>
+        <tr>
+            <th class="days" >Jeudi</th>
+            <td class="cours" colspan="2">UNIX</td>
+            <td  class="cours" style="width: 5%;"> 
+                C2 <br>
+                Pr.Oamri
+            <td class="cours" colspan="2">UNIX</td>
+            <td class="cours" style="width: 5%;"> 
+                C2 <br>
+                Pr.Omari
+            <td class="cours" colspan="2">anglais</td>
+            <td class="cours" style="width: 5%;"> 
+                C2 <br>
+                Pr.Boukhlet
+                <td class="tp" colspan="2">TP</td>
+                <td class="tp" style="width: 5%;"> </td>
+           
+        </tr>
+        <tr>
+            <th class="days" >Vendredi</th>
+            <td class="cours" colspan="2">Programmation web</td>
+            <td class="cours" style="width: 5%;"> 
+                C2 <br>
+                Pr.Omari
+            <td class="cours" colspan="2">Programmation web</td>
+            <td class="cours" style="width: 5%;"> 
+                C2 <br>
+                Pr.Omari
+            <td class="tp" colspan="2">TP</td>
+            <td class="tp" style="width: 5%;"> </td>
+            
+            <td class="tp" colspan="2">TP</td>
+            <td class="tp" style="width: 5%;"> </td>
+            
+        </tr>
+    </table>
+
+</body>
+</html>
+0675754443 Douae lahriki
