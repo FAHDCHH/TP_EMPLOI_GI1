@@ -1,0 +1,94 @@
+.hours{
+    background-color: gainsboro;
+    font-family:#e4855b;
+}
+.days{
+    width: 3%;
+    background-color: gainsboro;
+    font-family:#e4855b;
+
+}
+.tp{
+    background-color: white;
+    color :red;
+}
+.cours{
+    background-color: #effed6;
+
+    color:#e4855b;
+
+}
+.uni{
+    width: 10% ;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 5%;
+
+    border: 7 px  dotted  rgb(13, 13, 211);
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+
+
+}
+.ensa{
+    width: 10% ;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 5%;
+    text-align: center;
+    border: 5px  dotted  blue;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+
+}
+.table{
+    margin-top: 2%;
+    border-color: blue;
+}
+h1{
+    text-align:center;
+    margin-top:5% ;
+    color:#0070c0;
+    font-size : 15px;
+
+
+
+}
+
+h2{
+    text-align: center;
+    display: inline;
+    margin-left: 35%;
+    color: red;
+    border: 5px  dotted  blue;
+    border-top: none;
+    padding: 10px 100px;
+
+}
+#rs{
+    width: 0.5%;
+}
+.cours,.tp{
+    width: 10%;
+}
+.profcours{
+    width:5%;
+}
+.proftp{
+    width: 5%;
+}
+.no-prof {
+    content: "       ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(191, 215, 8);
+}
