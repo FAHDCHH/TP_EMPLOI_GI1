@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-window {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            position: fixed;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid ;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 80px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: rgb(4, 18, 99);
+            color: #fff;
+            width:45%;
+            cursor: pointer;
+
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: rgb(165, 131, 210);
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-window">
+    <form>
+        <div>
+            <label>Nom:</label>
+            <input required type="text">
+        </div>
+
+        <div>
+            <label>Prénom:</label>
+            <input required type="text">
+        </div>
+
+        <div>
+            <label>Sujet:</label>
+            <input required type="text">
+        </div>
+
+        <div>
+            <label>Description:</label>
+            <textarea required></textarea>
+        </div>
+
+        <div>
+            <label>Encadrant:</label>
+            <select>
+                <option value="Prof S.Baghdadi">Prof S.Baghdadi</option>
+                <option value="Prof2">Prof Ghazdali</option>
+                <option value="Prof3">Prof Omari</option>
+                <option value="Prof4">Prof Tissir</option>
+                <option value="Prof5">Prof Hamza</option>
+                <option value="Prof6">Prof Boukhlet</option>
+                <option value="Prof7">Prof Dargham</option>
+
+            </select>
+        </div>
+
+        <div>
+            <label>Filière:</label>
+            <input required type="text">
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
